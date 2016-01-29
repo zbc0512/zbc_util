@@ -1,11 +1,18 @@
 package io.zbc.spider;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Spider {
     public static String sendGet(String url) {
@@ -13,6 +20,7 @@ public class Spider {
         String result = "";
         // 定义一个缓冲字符输入流
         BufferedReader in = null;
+        BufferedWriter writer = null;
         try {
             // 将string转成url对象
             URL realUrl = new URL(url);
@@ -22,7 +30,7 @@ public class Spider {
             Proxy proxy = new Proxy(Proxy.Type.HTTP, addr); // http 代理
             // "password"));// 设置代理的用户和密码
             // 初始化一个链接到那个url的连接
-            URLConnection connection = realUrl.openConnection(proxy);
+            URLConnection connection = realUrl.openConnection();
             // 开始实际的连接
             connection.connect();
             // 初始化 BufferedReader输入流来读取URL的响应
@@ -31,7 +39,24 @@ public class Spider {
             String line;
             while ((line = in.readLine()) != null) {
                 // 遍历抓取到的每一行并将其存储到result里面
-                result += line + "\n";
+                result += line;
+            }
+            try {
+                writer = new BufferedWriter(
+                        new OutputStreamWriter(new FileOutputStream("zhihu.html")));
+                for(int i=0; i < result.length(); i++){
+                    char c = result.charAt(i);
+                    writer.write(c);
+                }
+                writer.flush();
+            } catch (FileNotFoundException e1) {
+                e1.printStackTrace();
+            } finally {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         } catch (Exception e) {
             System.out.println("发送GET请求出现异常！" + e);

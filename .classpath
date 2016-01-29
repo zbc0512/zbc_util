@@ -2,5 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_51"/>
+	<classpathentry kind="lib" path="D:/工作学习/MySQL/mysql-connector-java-5.1.34-bin.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>

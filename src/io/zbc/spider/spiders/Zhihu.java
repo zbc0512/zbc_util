@@ -1,5 +1,10 @@
 package io.zbc.spider.spiders;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -50,6 +55,23 @@ public class Zhihu {
 
     @Override
     public String toString() {
+        String jdbcUrl = "jdbc:mysql://localhost:3306/spider?useUnicode=true&characterEncoding=UTF-8";
+        String jdbcDriver = "com.mysql.jdbc.Driver";
+        String jdbcUser = "root";
+        String jdbcPassword = "";
+        String sql = "insert into zhihu (question, questionDescription, zhihuUrl, answers) values ('"
+                + question + "', '" + questionDescription + "', '" + zhihuUrl + "', '" + answers
+                + "')";
+        Connection conn = null;
+        try {
+            new com.mysql.jdbc.Driver();
+            conn = DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcPassword);
+            Statement st = conn.createStatement();
+            int result = st.executeUpdate(sql);
+            System.out.println(result);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return "问题：" + question + "\n" + "描述：" + questionDescription + "\n" + "链接：" + zhihuUrl
                 + "\n回答：" + answers + "\n";
     }
