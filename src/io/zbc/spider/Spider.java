@@ -25,7 +25,7 @@ public class Spider {
             // 将string转成url对象
             URL realUrl = new URL(url);
             // 创建代理服务器
-            InetSocketAddress addr = new InetSocketAddress("proxy.piccnet.com.cn", 3128);
+            InetSocketAddress addr = new InetSocketAddress("proxy.pcnet.com.cn", 3128);
             // Proxy proxy = new Proxy(Proxy.Type.SOCKS, addr); // Socket 代理
             Proxy proxy = new Proxy(Proxy.Type.HTTP, addr); // http 代理
             // "password"));// 设置代理的用户和密码
