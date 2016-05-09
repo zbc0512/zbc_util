@@ -1,0 +1,9 @@
+      <!-- 张燕妮的 -->
+      <USERCODE>44358915</USERCODE>
+      <!-- 兼业代理使用3 -->
+      <BIZORIGIN>3</BIZORIGIN>
+      <!-- 集群车宝专用 -->
+      <CHANNELCODE>44013L300011</CHANNELCODE>
+      <!-- 归属人：张燕妮 -->
+      <HANDLER1CODE>44358915</HANDLER1CODE>
+      <!-- 越秀公司 -->
