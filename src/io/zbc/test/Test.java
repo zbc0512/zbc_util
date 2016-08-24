@@ -1,13 +1,16 @@
 package io.zbc.test;
 
-import static io.zbc.util.Print.*;
-import static io.zbc.util.StringUtil.*;
+import org.apache.commons.lang3.StringUtils;
 
 public class Test {
     public static void main(String[] args) {
-        Object a = "test";
-        if (isNotEmpty(a.toString())) {
-            print(a);
+        String b = null;
+        if(!"".equals(b)){
+            System.out.println(b);
+        }
+        String a = "   ";
+        if(a != null && !"".equals(a.trim()) && StringUtils.isNotEmpty(a)){
+            System.out.println(a);
         }
     }
 }
