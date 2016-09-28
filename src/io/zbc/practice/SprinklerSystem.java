@@ -1,6 +1,6 @@
 package io.zbc.practice;
 
-import static io.zbc.util.Print.*;
+import static io.zbc.util.PrintUtil.print;
 
 public class SprinklerSystem {
     private String v1, v2, v3, v4;
