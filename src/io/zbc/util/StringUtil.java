@@ -8,7 +8,6 @@ public class StringUtil {
      * @return
      */
     public static boolean isNotEmpty(String str) {
-        return null != str && !str.trim().equals("") && !str.trim().equals("null")
-                && !str.trim().equals("undefined");
+        return null != str && !str.trim().equals("") && !str.trim().equals("null") && !str.trim().equals("undefined");
     }
 }
