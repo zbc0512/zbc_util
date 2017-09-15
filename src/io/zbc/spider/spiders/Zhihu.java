@@ -89,7 +89,7 @@ public class Zhihu {
         Pattern pattern = Pattern.compile("question/(.*?)/");
         Matcher matcher = pattern.matcher(url);
         if (matcher.find()) {
-            zhihuUrl = "http://www.zhihu.com/question/" + matcher.group(1);
+            zhihuUrl = "https://www.zhihu.com/question/" + matcher.group(1);
         } else {
             return false;
         }
@@ -131,7 +131,7 @@ public class Zhihu {
             // 定义一个知乎对象来存储抓取到的信息
             Zhihu zhuhuTemp = new Zhihu(urlMatcher.group(1));
             zhuhuTemp.question = questionMatcher.group(1);
-            zhuhuTemp.zhihuUrl = "http://www.zhihu.com" + urlMatcher.group(1);
+            zhuhuTemp.zhihuUrl = "https://www.zhihu.com" + urlMatcher.group(1);
             // 添加成功匹配的结果
             results.add(zhuhuTemp);
             // 继续查找下一个匹配对象
