@@ -58,7 +58,7 @@ public class Zhihu {
         String jdbcUrl = "jdbc:mysql://localhost:3306/spider?useUnicode=true&characterEncoding=UTF-8";
         String jdbcDriver = "com.mysql.jdbc.Driver";
         String jdbcUser = "root";
-        String jdbcPassword = "";
+        String jdbcPassword = "0512";
         String sql = "insert into zhihu (question, questionDescription, zhihuUrl, answers) values ('"
                 + question + "', '" + questionDescription + "', '" + zhihuUrl + "', '" + answers
                 + "')";

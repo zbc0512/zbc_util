@@ -11,7 +11,7 @@ public class Crawl {
 
     static ArrayList<Zhihu> recommendations() {
         // 定义即将访问的链接
-        String url = "http://www.zhihu.com/explore/recommendations";
+        String url = "https://www.zhihu.com/explore/recommendations";
         // 访问链接并获取页面内容
         String content = Spider.sendGet(url);
         // 获取该页面的所有的知乎对象

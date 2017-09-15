@@ -43,7 +43,7 @@ public class Spider {
             }
             try {
                 writer = new BufferedWriter(
-                        new OutputStreamWriter(new FileOutputStream("zhihu.html")));
+                        new OutputStreamWriter(new FileOutputStream("content.html")));
                 for(int i=0; i < result.length(); i++){
                     char c = result.charAt(i);
                     writer.write(c);
