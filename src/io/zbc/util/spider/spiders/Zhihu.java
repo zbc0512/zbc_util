@@ -1,15 +1,14 @@
-package io.zbc.spider.spiders;
+package io.zbc.util.spider.spiders;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import io.zbc.spider.Spider;
+import io.zbc.util.spider.Spider;
 
 public class Zhihu {
     public String question;// 问题

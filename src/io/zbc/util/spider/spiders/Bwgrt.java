@@ -1,4 +1,4 @@
-package io.zbc.spider.spiders;
+package io.zbc.util.spider.spiders;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

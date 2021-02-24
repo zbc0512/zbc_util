@@ -1,4 +1,4 @@
-package io.zbc.spider;
+package io.zbc.util.spider;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,8 +11,6 @@ import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Spider {
     public static String sendGet(String url) {

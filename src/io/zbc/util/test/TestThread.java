@@ -1,4 +1,4 @@
-package io.zbc.test;
+package io.zbc.util.test;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,4 +1,4 @@
-package io.zbc.io;
+package io.zbc.util.io;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

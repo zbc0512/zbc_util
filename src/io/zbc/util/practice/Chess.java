@@ -1,4 +1,4 @@
-package io.zbc.practice;
+package io.zbc.util.practice;
 
 import static io.zbc.util.PrintUtil.print;
 

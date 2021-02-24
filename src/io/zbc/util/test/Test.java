@@ -1,4 +1,4 @@
-package io.zbc.test;
+package io.zbc.util.test;
 
 public class Test {
     public static void main(String[] args) {

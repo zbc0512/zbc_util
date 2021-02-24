@@ -1,4 +1,4 @@
-package io.zbc.rmi.demo.server;
+package io.zbc.util.rmi.demo.server;
 
 import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;
@@ -6,8 +6,8 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
-import io.zbc.rmi.demo.HelloImpl;
-import io.zbc.rmi.demo.IHello;
+import io.zbc.util.rmi.demo.HelloImpl;
+import io.zbc.util.rmi.demo.IHello;
 
 /**
  * Created by IntelliJ IDEA. User: leizhimin Date: 2008-8-7 22:03:35

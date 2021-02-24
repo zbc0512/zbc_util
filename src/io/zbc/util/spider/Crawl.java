@@ -1,4 +1,4 @@
-package io.zbc.spider;
+package io.zbc.util.spider;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.zbc.spider.spiders.Bwgrt;
-import io.zbc.spider.spiders.Zhihu;
+import io.zbc.util.spider.spiders.Bwgrt;
+import io.zbc.util.spider.spiders.Zhihu;
 
 public class Crawl {
 	public static void main(String[] args) {

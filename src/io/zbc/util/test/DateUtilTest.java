@@ -1,4 +1,4 @@
-package io.zbc.test;
+package io.zbc.util.test;
 
 import java.text.ParseException;
 import java.util.Date;

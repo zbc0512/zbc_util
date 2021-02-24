@@ -1,11 +1,11 @@
-package io.zbc.rmi.demo.client;
+package io.zbc.util.rmi.demo.client;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-import io.zbc.rmi.demo.IHello;
+import io.zbc.util.rmi.demo.IHello;
 
 /**
  * Created by IntelliJ IDEA. User: leizhimin Date: 2008-8-7 22:21:07

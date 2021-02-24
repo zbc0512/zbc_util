@@ -1,4 +1,4 @@
-package io.zbc.rmi.demo;
+package io.zbc.util.rmi.demo;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

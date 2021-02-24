@@ -1,4 +1,4 @@
-package io.zbc.encoding;
+package io.zbc.util.encoding;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,7 +17,7 @@ public class GBKtoUTF8 {
         String encoding = System.getProperty("file.encoding");
         System.out.println(encoding);
         // 输入/输出的txt文件路径
-        String folder = "D:\\Workspaces\\eclipse\\zbc_util\\src\\io\\zbc\\encoding\\";
+        String folder = "D:\\Workspaces\\eclipse\\zbc-util\\src\\io\\zbc\\encoding\\";
         File filea = new File(folder + "a.txt");
         File fileb = new File(folder + "b.txt");
         String str = "";
